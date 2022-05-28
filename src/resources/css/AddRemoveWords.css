@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Kanit;
+    src: url('/resources/fonts/kanit/Kanit-Bold.ttf');
+}
+
+.label {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 30px;
+}
+
+.title {
+    -fx-font-size: 60px;
+}

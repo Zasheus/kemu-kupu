@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.CategoriesController">
+   <top>
+      <HBox styleClass="navbar" BorderPane.alignment="CENTER">
+         <children>
+            <HBox styleClass="lefthbox" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="homeButton" focusTraversable="false" mnemonicParsing="false" onAction="#homeButton" text="Home">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="newButton" focusTraversable="false" mnemonicParsing="false" onAction="#newGameButton" text="New Game">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="addWordsButton" focusTraversable="false" layoutX="87.0" layoutY="10.0" mnemonicParsing="false" onAction="#addWordsButton" text="Add Words">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="removeWordsButton" focusTraversable="false" layoutX="150.0" layoutY="10.0" mnemonicParsing="false" onAction="#removeWordsButton" text="Remove Words">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="viewWordsButton" focusTraversable="false" layoutX="236.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewWordsButton" text="View Words">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="leaderboardButton" focusTraversable="false" layoutX="346.0" layoutY="10.0" mnemonicParsing="false" onAction="#leaderboardButton" text="Leaderboard">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" styleClass="righthbox" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="quitButton" focusTraversable="false" mnemonicParsing="false" onAction="#quitButton" text="Quit">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <StackPane styleClass="image-stackpane" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Choose Topic:" />
+                        <ImageView fx:id="informationIcon" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#informationIcon" pickOnBounds="true" preserveRatio="true" styleClass="information-icon">
+                           <image>
+                              <Image url="@../images/info.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ComboBox fx:id="categoryBox" focusTraversable="false" prefWidth="320.0" promptText="Select Category" />
+                  <CheckBox fx:id="disablePleaseSpellCheckBox" mnemonicParsing="false" onAction="#disablePleaseSpellCheckBox" text="Disable &quot;Please Spell&quot;">
+                     <tooltip>
+                        <Tooltip styleClass="tool-tip" text="Stop the program from saying &quot;Please spell&quot; before every word" />
+                     </tooltip>
+                  </CheckBox>
+                  <CheckBox fx:id="disableDefinitionsCheckBox" mnemonicParsing="false" onAction="#disableDefinitionsCheckBox" text="Disable definitions">
+                     <tooltip>
+                        <Tooltip styleClass="tool-tip" text="Stop the program from saying the definition after every word" />
+                     </tooltip>
+                  </CheckBox>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button fx:id="practiseModeButton" layoutX="35.0" layoutY="10.0" mnemonicParsing="false" onAction="#practiseModeButton" prefWidth="320.0" styleClass="start-quiz" text="practice mode">
+                           <tooltip>
+                              <Tooltip styleClass="tool-tip" text="Practise mode is not timed or scored" />
+                           </tooltip></Button>
+                        <Button fx:id="gameModeButton" mnemonicParsing="false" onAction="#gameModeButton" prefWidth="320.0" styleClass="start-quiz" text="game mode">
+                           <tooltip>
+                              <Tooltip styleClass="tool-tip" text="Game mode is timed and scored" />
+                           </tooltip></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <stylesheets>
+      <URL value="@../css/GenericStyles.css" />
+      <URL value="@../css/Categories.css" />
+   </stylesheets>
+</BorderPane>

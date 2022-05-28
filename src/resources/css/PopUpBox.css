@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Kanit;
+    src: url('/resources/fonts/kanit/Kanit-Bold.ttf');
+}
+
+.root {
+    -fx-background-color: #DDB8A6;
+}
+
+.label {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 20px;
+    -fx-padding: 20px 20px 0 20px;
+}
+
+.text-field {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 20px;
+}
+
+.button {
+    -fx-background-color: #C67F43;
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 20px;
+
+    -fx-padding: 10px 0 15px 0;
+    -fx-border-insets: 10px 0 15px 0;
+    -fx-background-insets: 10px 0 15px 0;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}

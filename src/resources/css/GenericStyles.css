@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Kanit;
+    src: url('/resources/fonts/kanit/Kanit-Bold.ttf');
+}
+
+/* Background */
+
+.root {
+    -fx-background-color: #DDB8A6;
+}
+
+/* Nav bar styling */
+
+.navbar {
+    -fx-background-color: #893F04;
+}
+
+.navbar .button {
+    -fx-background-color: #893F04;
+    -fx-font-family: Kanit;
+    -fx-text-fill: #d29a6a;
+    -fx-font-size: 20px;
+}
+
+.navbar .button:hover {
+    -fx-background-color: #94521d;
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.lefthbox .button {
+    -fx-border-width: 0px 2px 0px 0px;
+    -fx-border-color: #733605;
+}
+
+.righthbox .button {
+    -fx-border-width: 0px 0px 0px 2px;
+    -fx-border-color: #733605;
+}
+
+/* Default styles */
+
+.button {
+    -fx-background-color: #C67F43;
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 30px;
+}
+
+/*
+.button:focused {
+    -fx-border-width: 2;
+    -fx-border-color: #893F04;
+}
+*/
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #CA8956;
+    -fx-text-fill: #995624;
+}
+
+.text-field {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 30px;
+}
+
+.information-icon:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+/* Check box styles */
+
+.check-box {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 30px;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: #893F04;
+    -fx-border-width: 3px;
+    -fx-background-insets: 2px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #7B876D;
+}
+
+.check-box .box:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+/* Table styles */
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: #D49B7E;
+    -fx-background-radius: 0px 8px 0px 0px;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #D49B7E;
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-font-size: 20px;
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #D49B7E;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #daaa91;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color: #893F04;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: #893F04;
+}

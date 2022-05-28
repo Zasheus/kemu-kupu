@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Kanit;
+    src: url('/resources/fonts/kanit/Kanit-Bold.ttf');
+}
+
+.label {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #893F04;
+    -fx-font-size: 60px;
+    -fx-padding: -10px 0 -10px 0;
+}
+
+.combo-box .list-cell {
+    -fx-font-family: Kanit;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 30px;
+    -fx-background-color: #7B876D;
+}
+
+.combo-box-popup > .list-view {
+    -fx-pref-width: 450px;
+}
+
+.combo-box .list-cell:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.combo-box {
+    -fx-background-color: #7B876D;
+}
+
+.combo-box:hover {
+    -fx-cursor: hand;
+}
